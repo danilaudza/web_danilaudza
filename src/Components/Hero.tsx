@@ -1,30 +1,37 @@
-import React from "react";
-import imagus from '../Assets/banner.webp'
+import React from 'react'
+import { motion } from 'framer-motion'
+
+import { styles } from '../styles'
+import { ComputersCanvas } from './canvas'
 
 const Hero = () => {
-
   return (
-    <div className="relative">
-      <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center gap-12 h-screen px-5">
-        <div className="flex flex-1 flex-col items-center lg:items-start">
-          <h2 className="text-blue-600 font-bold text-3xl md:text-4xl lg:text-5xl text-center lg:text-left mb-6">
-            Dhany Laudza
-          </h2>
-          <p className="texxt-gray-600 text-lg text-ecnter lg:text-legt mb-6">
-            Seorang mas-mas yang mendalami bidang Coding, Design, Videografi 
-          </p>
-          <div className="flex justify-center flex-wrap gap-6"></div>
-          <button type="button" className="bg-blue-600 hover:bg-blue-300 text-white px-3 py-2 rounded-md">
-            Find Me Here!
-          </button>
+    <section className='relative w-full h-screen mx-auto'>
+      <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
+        <div className='flex flex-col justify-center items-center mt-5'>
+          <div className='w-5 h-5 rounded-full bg-[#5efaff]'/>
+          <div className='w-1 sm:h-80 h-40 violet-gradient'/>
         </div>
-        <div className="flex justify-center flex-1 mb-10 md:mb-16 lg:mb-0 z-10">
-          <img className="w-full h-full object-contain" src={imagus} alt="" />
-        </div>
-      </div>
-      <div className="hidden md:block overflow-hidden bg-blue-600 rounded-l-full absolute h-80 w-2/4 top-32 right-0 lg:-bottom-28 lg:-right-36"></div>
-    </div>
-  );
-};
 
-export default Hero;
+        <div>
+          <h1 className={`${styles.heroHeadText}`}>Hi, I'm <span className='text-[#5efaff]'>Dani</span></h1>
+          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+              I am Interested in Code, Videography <br className='sm:block hidden'/> and Content Creating.
+          </p>
+        </div>
+
+      </div>
+      <ComputersCanvas/>
+
+      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
+        <a href="#about">
+          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
+            <motion.div animate={{y: [0,24,0]}} transition={{duration: 1.5, repeat: Infinity, repeatType: 'loop'}} className='h-3 w-3 rounded-full bg-secondary mb-3'/>
+          </div>
+        </a>
+      </div>
+    </section>
+  )
+}
+
+export default Hero
