@@ -29,5 +29,3 @@ jobs:
         password: ${{ secrets.ftp_password }}
         dangerous-clean-slate: true
         local-dir: ./build/
-        env:
-          REACT_APP_API_URL: ${{ secrets.REACT_APP_API_URL }}
