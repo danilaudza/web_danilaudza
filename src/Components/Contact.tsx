@@ -32,7 +32,7 @@ const Contact = () => {
     setLoading(true);
 
     console.log(process.env.REACT_APP_API_URL)
-    axios.post(`api.danilaudza.com/sendMessage`,{
+    axios.post(`https://api.danilaudza.com/sendMessage`,{
       name : form.name,
       email : form.email,
       msg : form.message
