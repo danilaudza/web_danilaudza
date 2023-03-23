@@ -103,17 +103,16 @@ const Works = () => {
             className="h-full w-full aspect-video"
             src="https://www.youtube-nocookie.com/embed?listType=playlist&list=PLmTyU5d9Kg_cG-ZrjsvNxkHcVxVAN1PqL&rel=0&controls=0"
             title="YouTube video player"
-            frameBorder={0}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>
         </div>
         <div className="flex flex-col lg:flex-row gap-7 mt-7  ">
           <div>
-          <video src={vid} className='w-max lg:w-full shadow-lg' controls={true} autoPlay={true} muted loop/>
+          <video src={vid} className='w-max lg:w-full shadow-lg' controls={true} muted loop/>
           </div>
           <div>
-          <video src={drone} className='w-max lg:w-full shadow-lg' controls={true} autoPlay={true} muted loop/>
+          <video src={drone} className='w-max lg:w-full shadow-lg' controls={true} muted loop/>
           </div>
         </div>
       </div>

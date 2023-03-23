@@ -25,8 +25,7 @@ const Stars = (props) => {
       </Points>
     </group>
   );
-}
-
+};
 
 const StarsCanvas = () => {
   return (
@@ -42,4 +41,4 @@ const StarsCanvas = () => {
   );
 };
 
-export default StarsCanvas
+export default StarsCanvas;
