@@ -21,7 +21,6 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
 
 import innoacademy from "./company/innoacademy.png"
 import bca from "./company/bca.png"
@@ -53,7 +52,6 @@ export {
   redux,
   tailwind,
   typescript,
-  threejs,
   earth,
   hotel,
   innoacademy,

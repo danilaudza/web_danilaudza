@@ -16,7 +16,6 @@ import {
     logo,
     earth,
     hotel,
-    threejs,
     innoacademy,
     ugm,
     bca,
@@ -92,10 +91,6 @@ import {
     {
       name: "MongoDB",
       icon: mongodb,
-    },
-    {
-      name: "Three JS",
-      icon: threejs,
     },
     {
       name: "git",
